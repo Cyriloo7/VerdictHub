@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Montserrat&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;900&display=swap" rel="stylesheet">
+    <title>Case Details Input</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css')}}">">
+</head>
+<body class="dark-theme">
+    <div class="contain">
+        <div class="scroll">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+        <div class="scroll-2">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+        <div class="scroll-3">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>INPUT CASE DETAILS</h1>
+        <form class="for" action="{{ url_for('text_process')}}" method="post">
+            <label for="case_description">Case Description:</label>
+            <textarea id="case_description" name="case_description" rows="4"></textarea>
+{#            <p class="submit_but" href="{{ url_for('text_process')}}">Submit</p>#}
+            <input type="submit" value="Submit" class="submit_but">
+        </form>
+    </div>
+
+
+</body>
+</html>

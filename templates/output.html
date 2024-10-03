@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Judgment</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='output.css')}}">
+</head>
+<body class="dark-theme">
+    <div class="contain">
+        <div class="scroll">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+        <div class="scroll-2">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+        <div class="scroll-3">
+            <div class="LeftToRight">
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+                <p class="infintescroll">VerdictHubVerdictHubVerdictHub</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Case Judgment</h1>
+        <div class="judgment">
+            <p>The judgment for the case is:</p>
+            <p class="judgment-text">{{ judgment }}</p>
+        </div>
+        <a href="{{ url_for('index') }}" class="back-link">Back to Case Input</a>
+    </div>
+</body>
+</html>

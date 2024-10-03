@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Montserrat&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>VerdictHub</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css')}}">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav id="#navbar">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a class="data_vis" href="{{ url_for('static', filename='DataVis.html')}}">Data Visualisation</a></li>
+            <li><a class="team" href="#team">Team</a></li>
+            <li><a class="ai" href="#model">ChatBox</a></li>
+        </ul>
+        <img class="logo" src="{{ url_for('static', filename='images/logo-removebg.png')}}">
+      </nav>
+      <p class="subtext">Your guide to accurate judgments.</p>
+    </div>
+  </div>
+    <h1 class="head">VerdictHub</h1>
+  <div id="about">
+    <h1 class="abt">ABOUT US</h1>
+    <div class="video-container">
+      <video class="vid" width="380" height="500" autoplay loop>
+        <source  src="{{ url_for('static', filename='images/vh_abt.mp4')}}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      <p class="abt_us">
+        Welcome to VerdictHub, where we strive to bring efficiency and fairness to the judicial process.
+        Our mission is to assist the judiciary by providing verdict suggestions based on case details.
+      </p>
+      <p class="abt_us">
+        We leverage the power of advanced machine learning, specifically the LLM (Large Language Model), to predict potential verdicts. This technology has been designed to understand and analyze legal language, case histories, and precedents, enabling it to provide informed suggestions.
+      </p>
+      <p class="abt_us">
+        VerdictHub was born out of a recognition of the challenges facing the legal system today. With a growing backlog of pending cases and concerns about judicial bias, we saw an opportunity to make a difference. Our platform aims to expedite the legal process, helping to alleviate the case backlog and ensure a swift journey to justice.
+        Moreover, by providing an AI-based verdict suggestion, we aim to introduce an additional layer of objectivity into the process. This can help to counter potential biases and ensure that every verdict is grounded in law and precedent.
+      </p>
+      <p class="abt_us">
+        At VerdictHub, we believe in the power of technology to transform society for the better. We’re excited to bring this vision to the legal sector, contributing to a fairer and more efficient judicial system. Join us on this journey towards a brighter legal future.
+      </p>
+      <p class="abt_us">
+        Please note: VerdictHub is intended to assist legal professionals and is not a substitute for professional legal advice. Always consult with a qualified legal professional for legal matters.</p>
+      </p>
+
+  </div>
+  <div id="team">
+    <h1 class="abt">TEAM</h1>
+    <div class="team-line-1">
+      <img class="team_img-1" src="{{ url_for('static', filename='images/cyril_new.jpg')}}">
+      <img class="team_img-1" src="{{ url_for('static', filename='images/aditya.jpg')}}">
+      <img class="team_img-1" src="{{ url_for('static', filename='images/chelsia.jpg')}}">
+    </div>
+    <div class="team-line-1">
+      <h1 class="team-name">CYRIL JOSE</h1>
+      <h1 class="team-name">ADITYA RAMGURU</h1>
+      <h1 class="team-name">CHELSIA GLADWIN</h1>
+    </div>
+    <div class="team-line-1">
+      <p class="team-role">MODEL DEVELOPMENT AND TRAINING</p>
+      <p class="team-role">NLP AND DATA CLEANING</p>
+      <p class="team-role">FRONTEND DEVELOPMENT AND BUSINESS USE CASE</p>
+    </div>
+    <div class="team-line-2">
+      <img class="team_img-2" src="{{ url_for('static', filename='images/PRAHARSH.jpg')}}">
+      <img class="team_img-2" src="{{ url_for('static', filename='images/rishi_new.jpg')}}">
+      <img class="team_img-1" src="{{ url_for('static', filename='images/yuga.jpg')}}">
+    </div>
+    <div class="team-line-1">
+      <h1 class="team-name">PRAHARSH</h1>
+      <h1 class="team-name">RISHI V N</h1>
+      <h1 class="team-name">YUGANESAN RAVICHANDRAN</h1>
+    </div>
+    <div class="team-line-1">
+      <p class="team-role">DATA VISUALISATION</p>
+      <p class="team-role">DATA SCRAPING AND DATASET PREPARATION</p>
+      <p class="team-role">TESTING AND EVALUATION</p>
+    </div>
+  </div>
+  <div id="model">
+    <h1 class="abt">TRY OUR MODEL</h1>
+    <p class="ai_para">Leveraging the power of advanced machine learning, we’ve developed a tool that predicts potential verdicts based on case details. This tool is designed to assist legal professionals by providing an additional layer of objectivity and efficiency to the judicial process. To try our model, simply click the ‘TRY NOW’ button below. You’ll be redirected to a page where you can input your case details and receive a prediction.</p>
+   <p class="precaution">Please remember, while our model is designed to be accurate, all predictions should be used as a guide and not as a definitive outcome. Always consult with a qualified legal professional for legal matters.</p>
+    <a href="{{ url_for('index') }}" class="index_link"> <button>TRY NOW</button> </a>
+
+  </div>
+</body>
+</html>
